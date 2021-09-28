@@ -1,11 +1,10 @@
-const mongoose = require ('mongoose');
+import { Schema, model } from 'mongoose';
 
-
-const cardSchema = new mongoose.Schema({
+const cardSchema = new Schema({
     cardText: {
         type: String,
         required:true
     }
 })
 
-module.exports = mongoose.model('Card', cardSchema);
+export default model('Card', cardSchema);

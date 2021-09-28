@@ -2,15 +2,16 @@
   "name": "api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
   },
   "keywords": [],
   "author": "diogo@diogocordeiro.pt",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "dotenv": "^10.0.0",
     "mongodb": "^4.1.1",
     "mongoose": "^6.0.5"
   },
